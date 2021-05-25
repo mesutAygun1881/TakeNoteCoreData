@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C7B1878265D675200CC6A04 /* NewTakeNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C7B1876265D675200CC6A04 /* NewTakeNote.xcdatamodeld */; };
 		7C85296A265D304500D74FEC /* TakeNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C852969265D304500D74FEC /* TakeNoteApp.swift */; };
 		7C85296C265D304500D74FEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C85296B265D304500D74FEC /* ContentView.swift */; };
 		7C85296E265D304700D74FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C85296D265D304700D74FEC /* Assets.xcassets */; };
 		7C852971265D304700D74FEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C852970265D304700D74FEC /* Preview Assets.xcassets */; };
 		7C852973265D304700D74FEC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C852972265D304700D74FEC /* Persistence.swift */; };
-		7C852976265D304700D74FEC /* TakeNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C852974265D304700D74FEC /* TakeNote.xcdatamodeld */; };
+		7C852982265D34E800D74FEC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C852981265D34E800D74FEC /* Home.swift */; };
+		7C852984265D351B00D74FEC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C852983265D351B00D74FEC /* HomeViewModel.swift */; };
+		7C852986265D366D00D74FEC /* NewDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C852985265D366D00D74FEC /* NewDataView.swift */; };
+		7C852988265D471800D74FEC /* DateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C852987265D471800D74FEC /* DateButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C7B1877265D675200CC6A04 /* NewTakeNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewTakeNote.xcdatamodel; sourceTree = "<group>"; };
 		7C852966265D304500D74FEC /* TakeNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C852969265D304500D74FEC /* TakeNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeNoteApp.swift; sourceTree = "<group>"; };
 		7C85296B265D304500D74FEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7C85296D265D304700D74FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C852970265D304700D74FEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C852972265D304700D74FEC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		7C852975265D304700D74FEC /* TakeNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TakeNote.xcdatamodel; sourceTree = "<group>"; };
 		7C852977265D304700D74FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C852981265D34E800D74FEC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		7C852983265D351B00D74FEC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7C852985265D366D00D74FEC /* NewDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDataView.swift; sourceTree = "<group>"; };
+		7C852987265D471800D74FEC /* DateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +64,14 @@
 		7C852968265D304500D74FEC /* TakeNote */ = {
 			isa = PBXGroup;
 			children = (
+				7C85297E265D34AE00D74FEC /* ViewModel */,
+				7C85297D265D349300D74FEC /* View */,
 				7C852969265D304500D74FEC /* TakeNoteApp.swift */,
 				7C85296B265D304500D74FEC /* ContentView.swift */,
 				7C85296D265D304700D74FEC /* Assets.xcassets */,
 				7C852972265D304700D74FEC /* Persistence.swift */,
 				7C852977265D304700D74FEC /* Info.plist */,
-				7C852974265D304700D74FEC /* TakeNote.xcdatamodeld */,
+				7C7B1876265D675200CC6A04 /* NewTakeNote.xcdatamodeld */,
 				7C85296F265D304700D74FEC /* Preview Content */,
 			);
 			path = TakeNote;
@@ -73,6 +83,24 @@
 				7C852970265D304700D74FEC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C85297D265D349300D74FEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C852981265D34E800D74FEC /* Home.swift */,
+				7C852985265D366D00D74FEC /* NewDataView.swift */,
+				7C852987265D471800D74FEC /* DateButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C85297E265D34AE00D74FEC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C852983265D351B00D74FEC /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C852976265D304700D74FEC /* TakeNote.xcdatamodeld in Sources */,
 				7C852973265D304700D74FEC /* Persistence.swift in Sources */,
+				7C852988265D471800D74FEC /* DateButton.swift in Sources */,
 				7C85296C265D304500D74FEC /* ContentView.swift in Sources */,
+				7C852982265D34E800D74FEC /* Home.swift in Sources */,
+				7C852984265D351B00D74FEC /* HomeViewModel.swift in Sources */,
+				7C7B1878265D675200CC6A04 /* NewTakeNote.xcdatamodeld in Sources */,
 				7C85296A265D304500D74FEC /* TakeNoteApp.swift in Sources */,
+				7C852986265D366D00D74FEC /* NewDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,13 +370,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7C852974265D304700D74FEC /* TakeNote.xcdatamodeld */ = {
+		7C7B1876265D675200CC6A04 /* NewTakeNote.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7C852975265D304700D74FEC /* TakeNote.xcdatamodel */,
+				7C7B1877265D675200CC6A04 /* NewTakeNote.xcdatamodel */,
 			);
-			currentVersion = 7C852975265D304700D74FEC /* TakeNote.xcdatamodel */;
-			path = TakeNote.xcdatamodeld;
+			currentVersion = 7C7B1877265D675200CC6A04 /* NewTakeNote.xcdatamodel */;
+			path = NewTakeNote.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
